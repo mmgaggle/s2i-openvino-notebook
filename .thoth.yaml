@@ -1,0 +1,37 @@
+host: khemenu.thoth-station.ninja
+tls_verify: false
+requirements_format: pipenv
+overlays_dir: overlays
+
+runtime_environments:
+  - name: python36
+    operating_system:
+      name: ubi
+      version: "8"
+    python_version: "3.6"
+    recommendation_type: latest
+    base_image: quay.io/thoth-station/s2i-thoth-ubi8-py36:v0.26.0
+
+  - name: python38
+    operating_system:
+      name: ubi
+      version: "8"
+    python_version: "3.8"
+    recommendation_type: latest
+    base_image: quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.26.0
+
+managers:
+  - name: update
+    configuration:
+      labels: [bot]
+  - name: info
+  - name: version
+    configuration:
+      maintainers:
+        - goern
+        - harshad16
+        - vpavlin
+      assignees:
+        - sesheta
+      labels: [bot]
+      changelog_file: true
