@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3dd0332f81c3759439c2aacbdc710e968a5bd0a5ced751efc41b48f317e1695c"
+            "sha256": "259a9f31f8291d578988376ffa2c44645b2f0249415506752acb5f03765e628a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -449,11 +449,11 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:9c900332d4c5a6de534b4befeeb7de44ad0cc42e8327fa41b7685abde58cec74",
-                "sha256:c0ce02dfaa5f854809ab7413c601c4543846d9da81010258ecdab299b542d199"
+                "sha256:060d19feef09453d3375ab23c7295ed36cb59e5a3904598ab903f93ec45f1f63",
+                "sha256:e468b8f03a0168a667982b50f0b4e0828cc32721bbea32b23934e55b7970eb7a"
             ],
-            "markers": "python_version >= '3.3'",
-            "version": "==7.22.0"
+            "index": "pypi",
+            "version": "==7.10.0"
         },
         "ipython-genutils": {
             "hashes": [
@@ -1096,7 +1096,6 @@
                 "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35",
                 "sha256:5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220"
             ],
-            "markers": "os_name != 'nt'",
             "version": "==0.7.0"
         },
         "pyasn1": {
