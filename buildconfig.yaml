@@ -35,7 +35,8 @@ spec:
       noCache: true
       dockerfilePath: Dockerfile
       env:
-        PIPFILE: pipfiles/openvino
+      - name: "PIPFILE"
+        value: pipfiles/openvino
     type: Docker
   triggers:
   - type: ConfigChange
