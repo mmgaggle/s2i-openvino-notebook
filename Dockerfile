@@ -16,6 +16,7 @@ RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -  && \
   yum remove -y nodejs && \
   yum install -y nodejs mesa-libGL
 
+COPY Dockerfile ${PIPFILE}* .
 # Copying in override assemble/run scripts
 COPY .s2i/bin /tmp/scripts
 # Copying in source code
