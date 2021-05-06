@@ -24,6 +24,10 @@ tensorflow-serving-api = "*"
 ipython = "==7.10"
 importlib-metadata = "==3.7.3"
 ipykernel = "==5.5.0"
+pyvista = "*"
+gdown = "*"
+pytube = "*"
+PVGeo = "*"
 
 [dev-packages]
 

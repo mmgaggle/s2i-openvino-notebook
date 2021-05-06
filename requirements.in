@@ -32,3 +32,11 @@ ipython==7.10  # pin version to prevent async warnings
 # Pin versions to prevent known dependency issues
 importlib-metadata==3.7.3
 ipykernel==5.5.0
+
+# salt notebook reqs
+pyvista
+PVGeo
+
+# vision backgroun reqs
+gdown
+pytube
