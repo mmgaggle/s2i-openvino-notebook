@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "07f86ae35bd3504c2e275cae517affbc9063efd323d6eaaa153e3ba66ade3797"
+            "sha256": "e34746d7f9f08aefe760e9cc399ed5df41e5e72feaf07c7cd30dd219c668162c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -616,6 +616,14 @@
             ],
             "index": "pypi",
             "version": "==5.5.0"
+        },
+        "ipympl": {
+            "hashes": [
+                "sha256:a18475c0fc81d59db055e4038219ba4c51ae6f51952f5716e9fc4854685ae5c5",
+                "sha256:f0f1f356d8cb9d4fb51bb86dbbf837c190145316cb72f66081872ebc4d6db0a1"
+            ],
+            "index": "pypi",
+            "version": "==0.7.0"
         },
         "ipython": {
             "hashes": [
@@ -1717,7 +1725,7 @@
                 "sha256:f68eb46b86b2c246af99fcaa6f6e37c7a7a413e1084a794990b877f2ff71f7b6",
                 "sha256:fdf606341cd798530b05705c87779606fcdfaf768a8129c348ea94441da15b04"
             ],
-            "markers": "python_version < '3.10' and python_version >= '3.7'",
+            "index": "pypi",
             "version": "==1.6.3"
         },
         "scooby": {
@@ -1759,6 +1767,31 @@
         },
         "sqlalchemy": {
             "hashes": [
+                "sha256:10176150fb4f7bef87e58b496e11ec8c09a06d7aaddec858aa3afe68ecf44be1",
+                "sha256:1508b5a58046ca9ec4c4d2a3f1dcd6bc2eb1b04e0e5ef7b85fe73fc1805b504a",
+                "sha256:2048c3f7934c589b2a8521da9a3c8f77b413a8e21b015be96355c6968028351e",
+                "sha256:296a3b53e50c3d61ea22969b9d57937714e62f4bd7b5db7bb0afe80e8fbbe44c",
+                "sha256:32412b74f8920b91b1412a8574167bdfe5dd189fdc9b7676f898ea49892fabca",
+                "sha256:38fce422c8553b14145e4d5ada3cc7643bb720d2761976ab03177b65dc14fb4d",
+                "sha256:3fa861a9211d284430a6669c3debf9cfac7cd738e1c50844575751900ebe16bf",
+                "sha256:5129af3c0cd879e37d3f7db417f7c6500c992b6e5d1cae42ba05e6dac97e3e60",
+                "sha256:51b5f73e4a38d07bd883aec6c4ce3292309bdf9e9ce2b21653b92c7ce9bc6f5a",
+                "sha256:6fd1bd8f4c134aa3a2fd43abe0f83245a3537001ea3c84dc0e28768a40a1a53c",
+                "sha256:79957deee6bb1e546dee806c66d3effeac3b2e33233663011550dbfe60cbfecd",
+                "sha256:907fc5a1db1bf9a3a26a205eba6529250ba5aced16f2bddb4a59763826294609",
+                "sha256:98d977df2854be582f83b1d02e32febdd72a93b6396417889448a0c0c20fd856",
+                "sha256:9934f1065bfce44dbd6c8dc68ce8f35492357d7cac5d83ddb585dbec5f3ff6ad",
+                "sha256:a2c6e766410eebb0e7c4a839acce5534619f5d03bd2aabf44e0caf8b813613b9",
+                "sha256:a365e616462e9d4409e87226a9da55d2cf2aa1b17c53208519ba3f8582edd529",
+                "sha256:a6c40fce57d12d5b4d99d091b6c33c8a8087cb753402218fd7a2b3be72de7e20",
+                "sha256:ab659472962815ea945e643166ab67299a1415c05d0fb6d9f9d915f9f4540cd9",
+                "sha256:b3e88738f82871a35a7c5995075100ddad74543e8697e683f655183860649024",
+                "sha256:b7e1570f54585247526e05cb642c46ee9be2eabe7f04945665c0a36b86bf1ee6",
+                "sha256:b8d6aab7f021ffb25d34671a48dc18007a12fad07c920be81401b6bf35ecf2d9",
+                "sha256:bcd85d7a71e2de3567c5c4b26b1a90c57432b3032ff9132dafae1c52a4edeea0",
+                "sha256:cf3e10181d4b96bafa693a03948b0da2136c977682a902b601b9fa0f35934cd0",
+                "sha256:dff5c33036a493c00e252a7067ecaa09ef5bbbeea53337083aba013be903c43a",
+                "sha256:e0b75b7712f25d8d51a793cbbffb26688d2f655b97c9dfad02aad67b09d121a6",
                 "sha256:fcea0af70a356fdff9efa917d33ec5a8538fe7bde3004ceded7377f1a97d8ef3"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
@@ -1958,7 +1991,7 @@
                 "sha256:daec693491c52e9498632dfbe9ccfc4882a557f5fa08982db1b4d3adbe0887c3",
                 "sha256:ebdebdb95e3477ceea267decfc0784859aa3df3e27e22d23b83e9b272bf157ae"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "index": "pypi",
             "version": "==4.60.0"
         },
         "traitlets": {

@@ -36,6 +36,9 @@ ipykernel==5.5.0
 # salt notebook reqs
 pyvista
 PVGeo
+ipympl
+tqdm
+scipy
 
 # vision backgroun reqs
 gdown
