@@ -14,7 +14,7 @@ USER root
 # Upgrade NodeJS > 12.0
 RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -  && \
   yum remove -y nodejs && \
-  yum install -y nodejs mesa-libGL
+  yum install -y nodejs mesa-libGL xorg-x11-Xvfb
 
 # Copying in override assemble/run scripts
 COPY .s2i/bin /tmp/scripts
