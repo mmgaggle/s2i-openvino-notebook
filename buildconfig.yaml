@@ -26,11 +26,11 @@ spec:
     git:
       uri: https://github.com/mmgaggle/s2i-openvino-notebook
       ref: wip-python38
-    type: Git
     secrets:
-    - secret:
-        name: etc-pki-entitlement
-    destinationDir: etc-pki-entitlement
+      - secret:
+          name: etc-pki-entitlement
+        destinationDir: etc-pki-entitlement
+    Type: Git
   strategy:
     dockerStrategy:
       from:
@@ -38,8 +38,6 @@ spec:
         name: 'quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.26.0'
       noCache: true
       dockerfilePath: Dockerfile
-      env:
-        PIPFILE: pipfiles/openvino
     type: Docker
   triggers:
   - type: ConfigChange

@@ -16,6 +16,7 @@ RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -  && \
   yum remove -y nodejs
 
 # Setup entitlements, install libGL + Xvfb
+RUN ls -al ./
 COPY ./etc-pki-entitlement /etc/pki/entitlement
 # Copy subscription manager configurations
 COPY ./rhsm-conf /etc/rhsm
