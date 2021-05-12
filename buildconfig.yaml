@@ -27,6 +27,10 @@ spec:
       uri: https://github.com/mmgaggle/s2i-openvino-notebook
       ref: wip-python38
     type: Git
+    secrets:
+    - secret:
+        name: etc-pki-entitlement
+    destinationDir: etc-pki-entitlement
   strategy:
     dockerStrategy:
       from:

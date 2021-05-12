@@ -14,7 +14,23 @@ USER root
 # Upgrade NodeJS > 12.0
 RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -  && \
   yum remove -y nodejs && \
-  yum install -y nodejs mesa-libGL
+
+# Setup entitlements, install libGL + Xvfb
+COPY ./etc-pki-entitlement /etc/pki/entitlement
+# Copy subscription manager configurations
+COPY ./rhsm-conf /etc/rhsm
+COPY ./rhsm-ca /etc/rhsm/ca
+# Delete /etc/rhsm-host to use entitlements from the build container
+RUN rm /etc/rhsm-host && \
+    # Initialize /etc/yum.repos.d/redhat.repo
+    # See https://access.redhat.com/solutions/1443553
+    yum repolist --disablerepo=* && \
+    subscription-manager repos --enable rhel-8-baseos-rhui-rpms && \
+    yum -y update && \
+    yum -y install  xorg-x11-server-Xvfb mesa-libGL && \
+    # Remove entitlements and Subscription Manager configs
+    rm -rf /etc/pki/entitlement && \
+    rm -rf /etc/rhsm
 
 # Copying in override assemble/run scripts
 COPY .s2i/bin /tmp/scripts
