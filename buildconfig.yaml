@@ -26,6 +26,13 @@ spec:
     git:
       uri: https://github.com/mmgaggle/s2i-openvino-notebook
       ref: wip-python38
+    configMaps:
+      - configMap:
+          name: rhsm-conf
+        destinationDir: rhsm-conf
+      - configMap:
+          name: rhsm-ca
+        destinationDir: rhsm-ca
     secrets:
       - secret:
           name: etc-pki-entitlement

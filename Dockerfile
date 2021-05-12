@@ -26,7 +26,7 @@ RUN rm /etc/rhsm-host && \
     # Initialize /etc/yum.repos.d/redhat.repo
     # See https://access.redhat.com/solutions/1443553
     yum repolist --disablerepo=* && \
-    subscription-manager repos --enable rhel-8-baseos-rhui-rpms && \
+    subscription-manager repos --enable rhel-8-for-x86_64-baseos-rpms && \
     yum -y update && \
     yum -y install  xorg-x11-server-Xvfb mesa-libGL && \
     # Remove entitlements and Subscription Manager configs
