@@ -29,7 +29,7 @@ RUN rm /etc/rhsm-host && \
     yum repolist --disablerepo=* && \
     subscription-manager repos --enable rhel-8-for-x86_64-baseos-rpms && \
     yum -y update && \
-    yum -y install xorg-x11-server-Xvfb mesa-libGL qt5-qtbase-devel libgl1-mesa-glx && \
+    yum -y install xorg-x11-server-Xvfb mesa-libGL qt5-qtbase-devel libglvnd-glx && \
     # Remove entitlements and Subscription Manager configs
     rm -rf /etc/pki/entitlement && \
     rm -rf /etc/rhsm
