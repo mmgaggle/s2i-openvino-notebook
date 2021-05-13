@@ -40,6 +40,7 @@ ipympl
 tqdm
 scipy
 ipyvtklink
+PyQt5
 
 # vision backgroun reqs
 gdown

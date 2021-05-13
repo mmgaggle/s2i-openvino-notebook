@@ -32,6 +32,7 @@ ipyvtklink = "*"
 gdown = "*"
 pytube = "*"
 PVGeo = "*"
+PyQt5 = "*"
 
 [dev-packages]
 
