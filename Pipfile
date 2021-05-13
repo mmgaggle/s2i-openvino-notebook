@@ -26,11 +26,12 @@ importlib-metadata = "==3.7.3"
 ipykernel = "==5.5.0"
 pyvista = "*"
 ipympl = "*"
+tqdm = "*"
+scipy = "*"
+ipyvtklink = "*"
 gdown = "*"
 pytube = "*"
 PVGeo = "*"
-tqdm = "*"
-scipy = "*"
 
 [dev-packages]
 

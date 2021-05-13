@@ -39,6 +39,7 @@ PVGeo
 ipympl
 tqdm
 scipy
+ipyvtklink
 
 # vision backgroun reqs
 gdown
