@@ -16,8 +16,20 @@ RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -  && \
   yum remove -y nodejs && \
   yum install -y nodejs
 
-RUN yum -y update && \
-    yum -y install mesa-libGL && \
+# Setup entitlements, install libGL + Xvfb
+RUN ls -al ./
+COPY ./etc-pki-entitlement /etc/pki/entitlement
+# Copy subscription manager configurations
+COPY ./rhsm-conf /etc/rhsm
+COPY ./rhsm-ca /etc/rhsm/ca
+# Delete /etc/rhsm-host to use entitlements from the build container
+RUN rm /etc/rhsm-host && \
+    # Initialize /etc/yum.repos.d/redhat.repo
+    # See https://access.redhat.com/solutions/1443553
+    yum repolist --disablerepo=* && \
+    subscription-manager repos --enable rhel-8-for-x86_64-baseos-rpms && \
+    yum -y update && \
+    yum -y install xorg-x11-server-Xvfb mesa-libGL mesa-libGL-devel qt5-qtbase-devel && \
     # Remove entitlements and Subscription Manager configs
     rm -rf /etc/pki/entitlement && \
     rm -rf /etc/rhsm
